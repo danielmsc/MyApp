@@ -8,7 +8,8 @@ const AboutView = ({navigation, route}) => {
     return (
         <View>
         <Text>Acerca de...</Text>
-        <Text>{name}</Text>
+        <Text>{JSON.stringify(name)}</Text>
+        <Text>{JSON.stringify(age)}</Text>
         <Button title="Atras" onPress={() => navigation.pop()} />
         </View>
     );
