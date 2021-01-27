@@ -4,14 +4,15 @@ import {Text, View, TextInput, Button} from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import AboutView from './Component/Views/AboutView';
+import styles from './Styles/Styles'
 
 const Home = ({navigation}) => {
   const [text, setText] = useState('');
 
   return (
-    <View>
-      <Text>Probando</Text>
-      <Text>{text}</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>Probando</Text>
+      <Text style={styles.text}>{text}</Text>
       <TextInput
         placeholder="Text input"
         onChangeText={(text) => setText(text)}
